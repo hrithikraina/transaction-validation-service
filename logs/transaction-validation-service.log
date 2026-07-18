@@ -1,0 +1,2 @@
+2026-07-17T09:01:13Z INFO transaction-validation-service validation-812 Evaluating risk rules payment_id=PAY-90021
+2026-07-17T09:01:13Z ERROR transaction-validation-service validation-812 java.lang.IndexOutOfBoundsException: Index: 2 Size: 2 while selecting sanctions rule for payment_id=PAY-90021

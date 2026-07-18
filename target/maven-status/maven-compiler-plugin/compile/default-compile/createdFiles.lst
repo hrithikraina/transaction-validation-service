@@ -1,0 +1,6 @@
+com/novabank/validation/RuleDecision.class
+com/novabank/validation/RiskRuleEngine.class
+com/novabank/validation/ValidationLog.class
+com/novabank/validation/TransactionValidationService.class
+com/novabank/validation/PaymentForValidation.class
+com/novabank/validation/TransactionValidationApplication.class

@@ -1,0 +1,2 @@
+package com.novabank.validation;
+class ValidationLog { private final StringBuilder entries = new StringBuilder(); void info(String m) { entries.append("2026-07-17T09:01:13Z INFO transaction-validation-service validation-812 ").append(m).append('\n'); } void error(String m) { entries.append("2026-07-17T09:01:13Z ERROR transaction-validation-service validation-812 ").append(m).append('\n'); } String entries() { return entries.toString(); } }
