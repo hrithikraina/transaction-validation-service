@@ -1,2 +1,2 @@
 package com.novabank.validation;
-record PaymentForValidation(String paymentId, double amount) { }
+record PaymentForValidation(String requestId, String paymentId, double amount) { }

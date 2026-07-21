@@ -1,2 +1,2 @@
-2026-07-17T09:01:13Z INFO transaction-validation-service validation-812 Evaluating risk rules payment_id=PAY-90021
-2026-07-17T09:01:13Z ERROR transaction-validation-service validation-812 java.lang.IndexOutOfBoundsException: Index: 2 Size: 2 while selecting sanctions rule for payment_id=PAY-90021
+2026-07-17T10:15:27.151Z INFO transaction-validation-service Evaluating risk rules payment_id=PAY-482912
+2026-07-17T10:15:27.151Z ERROR transaction-validation-service request_id=REQ-1003 payment_id=PAY-482912 error_code=VALIDATION_FAILED Final validation attempt failed; Received null
