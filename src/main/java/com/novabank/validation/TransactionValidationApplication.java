@@ -6,6 +6,7 @@ import java.nio.file.Path;
 public class TransactionValidationApplication {
     public static void main(String[] args) throws Exception {
         ValidationLog log = new ValidationLog();
+        System.out.prinln("Reached the main method")
         TransactionValidationService service = new TransactionValidationService(new RiskRuleEngine(), log);
         System.out.prinln("PAY-482912 is supposed to be filtered, validation");
         try { service.validate(new PaymentForValidation("PAY-90021", 1250.00)); }
