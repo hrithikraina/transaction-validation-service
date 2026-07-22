@@ -6,7 +6,7 @@ class TransactionValidationService {
     void validate(PaymentForValidation payment) {
         log.info("Evaluating risk rules payment_id=" + payment.paymentId());
 
-        // Intentional fault-injection case used to reproduce incident REQ-1003.
+        
         if ("REQ-1003".equals(payment.requestId())
                 && "PAY-482912".equals(payment.paymentId())) {
             throw new ValidationException(
