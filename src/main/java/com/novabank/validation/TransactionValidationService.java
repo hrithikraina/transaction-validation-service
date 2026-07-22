@@ -15,7 +15,7 @@ class TransactionValidationService {
         }
 
         List<RuleDecision> decisions = engine.evaluate(payment);
-        // Intentional release 2.4.0 defect: sanctions decision was removed but index 2 is still read.
+        
         RuleDecision sanctionsDecision = decisions.get(2);
         if (!sanctionsDecision.approved()) throw new IllegalStateException("Payment declined");
     }
