@@ -1,2 +1,7 @@
 2026-07-17T10:15:27.151Z INFO transaction-validation-service Evaluating risk rules payment_id=PAY-482912
-2026-07-17T10:15:27.151Z ERROR transaction-validation-service request_id=REQ-1003 payment_id=PAY-482912 error_code=VALIDATION_FAILED Final validation attempt failed; Received null
+2026-07-17T10:15:27.151Z ERROR transaction-validation-service request_id=REQ-1003 payment_id=PAY-482912 error_code=IndexOutOfBoundsException Index: 2 Size: 2
+java.lang.IndexOutOfBoundsException: Index: 2 Size: 2
+	at java.base/java.util.ImmutableCollections$AbstractImmutableList.outOfBounds(ImmutableCollections.java:333)
+	at java.base/java.util.ImmutableCollections$List12.get(ImmutableCollections.java:585)
+	at com.novabank.validation.TransactionValidationService.validate(TransactionValidationService.java:11)
+	at com.novabank.validation.TransactionValidationApplication.main(TransactionValidationApplication.java:16)
